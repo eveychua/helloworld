@@ -5,7 +5,7 @@ answer = random.randint(1, highest)
 guess = ""
 countguess = 0
 
-while guess != answer and userquit != "exit":
+while guess != answer:
     guess = input("Please guess a number between 1 to {}".format(highest))
     countguess += 1
     if guess.casefold() == "exit":
